@@ -12,4 +12,6 @@ At pubmed.gov:
 
 More info inside py file.
 
+![screensot](pm_dataframe.png)
+
 Requires pandas and lxml packages. Authored in spyder editor.
