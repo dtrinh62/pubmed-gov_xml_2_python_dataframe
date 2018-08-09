@@ -6,8 +6,10 @@ Use this XSLT file and Python script when you want to work with pubmed.gov expor
 
 At pubmed.gov: 
 
-** Run your search strategy
-** Send to > File > Format: XML
-** Update file name in script
+- Run your search strategy
+- Send to > File > Format: XML
+- Update file name in script
 
-Requires pandas, lxml packages. Authored in spyder editor.
+More info inside py file.
+
+Requires pandas and lxml packages. Authored in spyder editor.
