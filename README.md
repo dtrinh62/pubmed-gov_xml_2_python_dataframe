@@ -15,3 +15,8 @@ More info inside py file.
 ![screensot](pm_dataframe.png)
 
 Requires pandas and lxml packages. Authored in spyder editor.
+
+Serving suggestion - video about a ColdFusion app that is out of date; I hope to move it to Python-Flask or Python-Django:
+
+> http://www.screencast.com/t/Yr7hdMxA 
+> If asked, enter the following password: NewHLRev
