@@ -16,7 +16,7 @@ More info inside py script.
 
 ## Infos
 
-- Relies on tag information at https://www.nlm.nih.gov/bsd/licensee/data_elements_doc.html.
+- Relies on the XML tag information at https://www.nlm.nih.gov/bsd/licensee/data_elements_doc.html. Not all tags are included here; you may need to update the XSLT depending on the work you are doing.
 - I am using exports of 20,000 records or less.
 - Requires pandas and lxml packages. 
 - Authored in Spyder editor.
