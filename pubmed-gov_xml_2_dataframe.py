@@ -49,10 +49,8 @@ SCRIPT CONTENTS
 ----------------
 
 1. Start-up / What to put into place, where
-2. Transform using XSLT file
-3. Convert to dataframe
-4. Re-order, reduce columns
-5. Summarize
+2. Process/inspect pubmedarticle
+3. Process/inspect author
 
 Partly based on https://stackoverflow.com/questions/49439081/nested-xml-file-to-pandas-dataframe
 """
@@ -86,7 +84,7 @@ xsl_author = et.parse("xslt/tbl_author.xsl")
 
 #%%
 # ===================================
-# 2. Process pubmedarticle
+# 2. Process/inspect pubmedarticle
 # ===================================
 
 # Run the transform
@@ -129,7 +127,7 @@ print("Available in PubMed Central (free full text)\n{}".format(pubmedarticle['P
 
 #%%
 # ===================================
-# 2. Process author
+# 3. Process/inspect author
 # ===================================
 
 transformer = et.XSLT(xsl_author)
@@ -157,6 +155,6 @@ XML; potential list is PMID, AuthorListCompleteYN, AuthorValidYN, LastName,
 ForeName, Suffix, Initials, CollectiveName, EqualContrib, ConstructedPersonName,
 Affiliation, IdentifierSource, Identifier
 '''
-        
+# FIXME - Useful to have Affiliation, but will cause error if it wasn't in the XML
 author = author[['PMID', 'AuthorListCompleteYN', 'AuthorValidYN', 'LastName',
-                 'ForeName', 'Initials']]
+                 'ForeName', 'Initials', 'ConstructedPersonName']]

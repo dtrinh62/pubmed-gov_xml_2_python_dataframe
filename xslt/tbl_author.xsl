@@ -33,7 +33,7 @@
                 <xsl:if test="EqualContrib">
                     <EqualContrib><xsl:value-of select="EqualContrib"/></EqualContrib>
                 </xsl:if>
-                <ConstructedPersonName><xsl:value-of select="LastName"/>, <xsl:if test="Suffix"><xsl:value-of select="Suffix"/>, </xsl:if><xsl:if test="Initials"><xsl:value-of select="Initials"/></xsl:if></ConstructedPersonName>
+                <ConstructedPersonName><xsl:if test="LastName"><xsl:value-of select="LastName"/></xsl:if><xsl:if test="Suffix">, <xsl:value-of select="Suffix"/></xsl:if><xsl:if test="Initials">, <xsl:value-of select="Initials"/></xsl:if></ConstructedPersonName>
                 <xsl:if test="AffiliationInfo/Affiliation">
                     <Affiliation><xsl:value-of select="AffiliationInfo/Affiliation"/></Affiliation>
                 </xsl:if>
