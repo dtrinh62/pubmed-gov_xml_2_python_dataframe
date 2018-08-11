@@ -157,4 +157,24 @@ Affiliation, IdentifierSource, Identifier
 '''
 # FIXME - Useful to have Affiliation, but will cause error if it wasn't in the XML
 author = author[['PMID', 'AuthorListCompleteYN', 'AuthorValidYN', 'LastName',
-                 'ForeName', 'Initials', 'ConstructedPersonName']]
+                 'ForeName', 'Initials', 'ConstructedPersonName', 'Affiliation']]
+
+# Total person names
+print("Total person names found: {}".format(len(author)))
+
+# Total unique person names
+print("Total unique person names: {}".format(author['ConstructedPersonName'].nunique()))
+
+# Where are authors based?
+authorCountByAfilliation = author['Affiliation'].value_counts().reset_index()
+authorCountByAfilliation = authorCountByAfilliation.rename(columns={'Affiliation': 'Author count', 'index': 'Author affiliation'})
+authorCountByAfilliation.head(n=20)
+print("The institutions person names are based at, Top 20\n{}".format(authorCountByAfilliation))
+
+# How many articles are associated with each institution?
+# Author affiliation field is not controlled, making this messy/inaccurate!
+# <Identity> tag cleans this up but is not in most records.
+# FIXME - Good candidate for natural language processing.
+articleCountByInstitution = author.groupby('Affiliation')['PMID'].nunique().reset_index()
+articleCountByInstitution = articleCountByInstitution.rename(columns={'Affiliation': 'Author affiliation', 'PMID': 'PMID count'})
+print("Clean up this dataframe manually! Article count by institution\n{}".format(articleCountByInstitution))
