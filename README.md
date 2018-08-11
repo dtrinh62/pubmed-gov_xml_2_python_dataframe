@@ -2,7 +2,7 @@
 
 > A way to move pubmed.gov records into Pandas dataframes for further processing.
 
-Use this XSLT file and Python script when you want to work with pubmed.gov exports in Python. I am using 10,000 records or less.
+Use this XSLT file and Python script when you want to work with pubmed.gov exports in Python. I am using 20,000 records or less.
 
 At pubmed.gov: 
 
@@ -14,7 +14,7 @@ More info inside py file.
 
 ![screensot](pm_dataframe.png)
 
-Requires pandas and lxml packages. Authored in spyder editor.
+Relies on tag information at https://www.nlm.nih.gov/bsd/licensee/data_elements_doc.html. Requires pandas and lxml packages. Authored in Spyder editor.
 
 Serving suggestion - video about a ColdFusion app that is out of date; I hope to move it to Python-Flask or Python-Django:
 
