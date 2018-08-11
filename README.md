@@ -20,7 +20,4 @@ More info inside py script.
 - I am using exports of 20,000 records or less.
 - Requires pandas and lxml packages. 
 - Authored in Spyder editor.
-- Serving suggestion - video about a ColdFusion app that is out of date; I hope to move it to Python-Flask or Python-Django:
-
-> http://www.screencast.com/t/Yr7hdMxA 
-> If asked, enter the following password: NewHLRev
+- Serving suggestion - video about a ColdFusion app that is out of date; I hope to move it to Python-Flask or Python-Django: http://www.screencast.com/t/Yr7hdMxA. If asked, enter the following password: NewHLRev
