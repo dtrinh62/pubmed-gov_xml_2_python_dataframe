@@ -1,6 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Adapt as needed - https://www.nlm.nih.gov/bsd/licensee/data_elements_doc.html;
-    https://www.nlm.nih.gov/bsd/licensee/elements_descriptions.html#authorlist. - Dan Wendling -->
 
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
     <xsl:output method="xml" encoding="utf-8" indent="yes"/>
