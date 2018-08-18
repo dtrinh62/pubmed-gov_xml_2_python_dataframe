@@ -22,7 +22,7 @@ More info inside py script.
 - Authored in Spyder editor; code blocks are separated with #%%.
 - Serving suggestion - Video about a ColdFusion app that is out of date; the plan is to move it to Python-Flask or Python-Django. http://www.screencast.com/t/Yr7hdMxA. If asked, enter the following password: NewHLRev
 
-## Serving suggrestion
+## Serving suggestion
 [Year/MeSH-Major drill-downs in Tableau](https://public.tableau.com/profile/danwendling#!/vizhome/Healthliteracy-NIHgrants/Healthliteracy-NIHgrants) (Use Download Workbook to understand that better)
 
 ![TableauDemo](Tableau_demo-HL-NIH.png)
