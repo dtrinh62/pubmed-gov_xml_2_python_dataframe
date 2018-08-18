@@ -11,9 +11,7 @@ Use this Python script and these XSLT files when you want to work with pubmed.go
 
 More info inside py script.
 
-Serving suggrestion: [Year/MeSH-Major drill-downs in Tableau](https://public.tableau.com/profile/danwendling#!/vizhome/Healthliteracy-NIHgrants/Healthliteracy-NIHgrants) (Use Download Workbook to understand that better)
-
-![screensot](pm_dataframe.png)
+![screenshot](pm_dataframe.png)
 
 
 ## Infos
@@ -23,3 +21,8 @@ Serving suggrestion: [Year/MeSH-Major drill-downs in Tableau](https://public.tab
 - Requires pandas and lxml packages. 
 - Authored in Spyder editor; code blocks are separated with #%%.
 - Serving suggestion - Video about a ColdFusion app that is out of date; the plan is to move it to Python-Flask or Python-Django. http://www.screencast.com/t/Yr7hdMxA. If asked, enter the following password: NewHLRev
+
+## Serving suggrestion
+[Year/MeSH-Major drill-downs in Tableau](https://public.tableau.com/profile/danwendling#!/vizhome/Healthliteracy-NIHgrants/Healthliteracy-NIHgrants) (Use Download Workbook to understand that better)
+
+![TableauDemo](Tableau_demo-HL-NIH.png)
