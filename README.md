@@ -1,3 +1,5 @@
+> :warning: **Might be obsolete**: The new UI does not have XML export as an option. Waiting to see if it gets added back in... But you might be able to adapt this to the currently available CSV export option.
+
 # pubmed-gov_xml_2_python_dataframe
 
 > A way to move pubmed.gov records into Pandas dataframes for further processing.
@@ -5,7 +7,8 @@
 Use this Python script and these XSLT files when you want to work with pubmed.gov exports in Python. To get started, at pubmed.gov: 
 
 - Run your search strategy
-- Send to > File > Format: XML
+- ~~Send to > File > Format: XML
+(September 2020, UI no longer has XML option)
 - Update file name in py script
 - Run.
 
